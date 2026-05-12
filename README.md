@@ -6,6 +6,26 @@ The project ingests NYC Taxi parquet datasets from external web/API sources, pro
 
 ---
 
+# 📌 Project Overview
+
+The project ingests publicly available NYC Taxi trip datasets from web/API sources into Azure Data Lake Storage Gen2 and processes them through multiple transformation layers using Azure Databricks.
+
+The pipeline handles:
+
+* Dynamic ingestion of monthly parquet datasets
+* Schema drift and datatype inconsistencies
+* Data quality validations
+* Business-rule validations
+* Anomaly detection
+* Dimensional enrichment
+* KPI aggregation
+* Delta Lake business marts
+* BI integration with Power BI
+
+The final output is a scalable Lakehouse analytics platform optimized for reporting and analytical consumption.
+
+---
+
 # ⚙️ Technologies Used
 
 * Azure Data Factory (ADF)
@@ -21,18 +41,23 @@ The project ingests NYC Taxi parquet datasets from external web/API sources, pro
 ---
 
 # 🏗️ Architecture Overview
+<img width="1706" height="958" alt="NYC-Taxi Architecture" src="https://github.com/user-attachments/assets/31b9df78-b880-4778-ad47-73b79fca852b" />
+
 
 ## Bronze Layer
 
-* Dynamic ingestion of monthly parquet files using ADF
-* Raw data storage in ADLS Gen2
+* Raw parquet ingestion from external web/API sources
+* Dynamic Azure Data Factory pipelines
+* ADLS Gen2 raw storage
 
 ## Silver Layer
 
-* Schema normalization and schema drift handling
-* Data quality validations and anomaly detection
-* Dimensional enrichment using lookup datasets
-* Partitioned curated datasets using PySpark
+  * Schema normalization
+  * Data quality validations
+  * Business-rule validations
+  * Suspicious/anomaly trip identification
+  * Derived metrics and analytical enrichment
+  * Partitioned curated datasets
 
 ## Gold Layer
 
@@ -82,3 +107,7 @@ Implemented secure connectivity between Databricks and ADLS Gen2 using:
 * Data Quality Engineering
 * Partition Optimization
 * BI-Oriented Data Modeling
+
+---
+
+# 👨‍💻 Salman Khan Patan
