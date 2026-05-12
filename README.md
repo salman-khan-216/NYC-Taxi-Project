@@ -41,7 +41,8 @@ The final output is a scalable Lakehouse analytics platform optimized for report
 ---
 
 # 🏗️ Architecture Overview
-<img width="1706" height="958" alt="NYC-Taxi Architecture" src="https://github.com/user-attachments/assets/31b9df78-b880-4778-ad47-73b79fca852b" />
+<img width="1706" height="958" alt="NYC-Taxi Architecture-signed" src="https://github.com/user-attachments/assets/69c19aab-0787-4ba9-9ea8-f7a2f6c8ad7d" />
+
 
 
 ## Bronze Layer
